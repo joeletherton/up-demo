@@ -1,0 +1,603 @@
+﻿html {
+    height:100%; /* fix height to 100% for IE */
+    max-height:100%; /* fix height for other browsers */
+    padding:0; /*remove padding */
+    margin:0; /* remove margins */
+    border:0; /* remove borders */
+    background:#fff; /*color background - only works in IE */
+    font-size:80%; /*set default font size */
+    font-family:"trebuchet ms", tahoma, verdana, arial, sans-serif; /* set default font */
+    /* hide overflow:hidden from IE5/Mac */
+    /* \*/
+    overflow:hidden; /*get rid of scroll bars in IE */
+    /* */
+}
+
+body {
+    height:100%; /* fix height to 100% for IE */
+    max-height:100%; /* fix height for other browsers */
+    overflow:hidden; /*get rid of scroll bars in IE */
+    padding:0; /*remove padding */
+    margin:0; /* remove margins */
+    border:0; /* remove borders */
+    color: #444444;
+	font-family: Georgia;
+}
+
+#content { 
+    display:block; /* set up as a block */
+    height:100%; /* set height to full page */
+    max-height:100%;
+    overflow:auto; /* add scroll bars as required */
+    /*padding-left:200px; /* pad left to avoid navigation div if required */
+    position:relative; /* set up relative positioning so that z-index will work */
+    z-index:3; /* allocate a suitable z-index */
+}
+
+#head 
+{
+    position:absolute;
+    margin: 0;
+    top: 0;
+    right: 18px;
+    display: block;
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+    background-image: url(/Images/terracotta.png);
+    background-repeat: repeat-x;
+    z-index:5;
+}
+
+#foot
+{
+    position:absolute;
+    margin:0;
+    bottom:-1px;
+    right:18px;
+    display:block;
+    width:100%; 
+    height:45px; 
+    background:#ffffff;
+    z-index:4;
+    background-image: url(/Images/terracotta_grey.png);
+    background-repeat: repeat-x;
+    overflow: hidden;
+    padding: 15px 0px 0px 0px;
+}
+
+#foot_copyright
+{
+	float: right;
+	background-color: #222222;
+	color: #ffffff;
+	font-family: Trebuchet MS, Sans-Serif;
+	font-size: 9pt;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: right;
+	height: 45px;
+	margin: 8px 0px 0px 0px;
+	width: 100%;
+}
+
+#foot_container
+{
+    background-color: #222222;
+    height: 200px;
+    width: 100%;
+    margin: 0px 0px 0px 18px;   
+}
+
+#just_give_me_some_space
+{
+    height: 150px;
+}
+
+h1
+{
+	font-family: Impact, Haettenschweiler, Sans-Serif;
+	font-size: 32pt;
+	color: #992e0e;
+	font-weight: 300;
+	margin: 0;
+}
+
+h2, .h2
+{
+	font-family: Georgia, Palatino Linotype, Book Antiqua, Serif;
+	font-size: 14pt;
+	font-weight: 400;
+	color: #992e0e;
+}
+
+p
+{
+	font-family: Georgia, Palatino Linotype, Book Antiqua, Serif;
+	font-size: 12pt;
+	color: #444444;
+	font-weight: 400;
+	line-height: 16pt;
+}
+
+a, a:link, a:visited, a:active, a:hover
+{
+	font-family: Georgia, Palatino Linotype, Book Antiqua, Serif;
+	font-size: 12pt;
+	font-weight: 400;
+	line-height: 16pt;
+	text-decoration: underline; 
+}
+
+a, a:link, a:visited
+{
+	color: #992e0e;    
+}
+
+a:active
+{
+    color: #888888;    
+}
+
+a:hover
+{
+    color: #591b08;
+}
+
+a.MenuLink, a.MenuLink:link, a.MenuLink:visited, a.MenuLink:active, a.MenuLink:hover
+{
+	font-family: Georgia, Palatino Linotype, Book Antiqua, Serif;
+	font-size: 14pt;
+	font-weight: 400;
+	line-height: 28pt;
+}
+
+a.MenuLink, a.MenuLink:link, a.MenuLink:visited
+{
+	text-decoration: none;
+	color: #992e0e;	
+}
+
+a.MenuLink:active
+{
+	text-decoration: underline;
+	color: #888888;	
+}
+
+a.MenuLink:hover
+{
+	text-decoration: underline;
+	color: #591b08;	
+}
+
+b, strong
+{
+    color: #992e0e;
+}
+
+#foot_container .footer
+{
+	height: 155px;
+	width: 450px;
+	background-color: #222222;
+	float: left;
+	margin: 0px 0px 0px 10px;
+	font-family: Trebuchet MS, Sans-Serif;
+	font-size: 9pt;
+	color: #ffffff;
+}
+
+#foot_container .footer strong, 
+#foot_container .footer b
+{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+#foot_container .footer a,
+#foot_container .footer a:link,
+#foot_container .footer a:visited,
+#foot_container .footer a:active
+{
+	font-family: Trebuchet MS, Sans-Serif;
+	font-size: 9pt;
+	text-decoration: none;	
+}
+
+#foot_container .footer a:hover
+{
+	font-family: Trebuchet MS, Sans-Serif;
+	font-size: 9pt;
+	color: #b94e2e;
+	text-decoration: underline;	
+}
+
+.articleTime
+{
+    font-family: Trebuchet MS, Sans-Serif;
+    font-size: 9pt;
+    color: #666666;   
+}
+
+a.articleTime, a.articleTime:link, a.articleTime:visited
+{
+    font-family: Trebuchet MS, Sans-Serif;
+    font-size: 9pt;
+	color: #992e0e;    
+}
+
+div.articleRow, div.articleRowAlt
+{
+    border-top: 1px dotted #992e0e;
+    height: 100px;
+    cursor: default;
+}
+
+div.articleRow:hover, div.articleRowAlt:hover, div.articleBox:hover
+{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+div.articleRow
+{
+    background-color: #ffffff; 
+    position: relative;  
+}
+
+div.articleRowAlt
+{
+    background-color: #faeaea;
+    position: relative;
+}
+
+div.articleBox, div.articleBoxAlt
+{
+    float: left;
+    height: 350px;
+    width: 250px;
+    border: 1px dotted #992e0e;
+    overflow: hidden;
+    margin: 0px 25px 25px 0px;
+}
+
+div.articleRowDate
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 99px;
+    width: 120px;
+    text-align: center; 
+}
+
+div.articleBoxDate
+{
+    padding: 5px 5px 5px 5px;    
+}
+
+div.articleRowDateAlign
+{
+    position: relative;
+    top: 35%;       
+}
+
+div.articleRowDate .large, div.articleBoxDate .large
+{
+	font-family: Trebuchet MS, Sans-Serif;
+	font-size: 11pt;
+	color: #992e0e;
+	font-weight: 400;
+}
+
+div.articleRowDate .small, div.articleBoxDate .small
+{
+	font-family: Trebuchet MS, Sans-Serif;
+	font-size: 9pt;
+	color: #aaaaaa;
+	font-weight: 400;
+}
+
+div.articleRowListing
+{
+    position: absolute;
+    top: 0px;
+    left: 121px;
+    height: 99px;
+}
+
+div.articleBoxListing
+{
+    padding: 0px 5px 5px 5px;
+}
+
+div.articleRowListing b, div.articleBoxListing b
+{
+    color: #992e0e;
+}
+
+div.articleRowListing p, div.articleBoxListing p
+{
+	font-family: Georgia, Palatino Linotype, Book Antiqua, Serif;
+	color: #444444;
+	font-weight: 400;  
+}
+
+div.articleRowListing p
+{
+	font-size: 10pt;    
+}
+
+div.articleBoxListing p
+{
+	font-size: 9pt;
+}
+
+div.articleRowListing p
+{
+ 	margin-right: 15px;   
+}
+
+div.articleBoxListing p
+{
+    margin-left: 0px;
+}
+
+div.articleRowListing .MenuLink, div.articleBoxListing .MenuLink
+{
+    line-height: 10pt;   
+}
+
+div.letMeIn
+{
+    margin: 0 auto;
+    text-align: left;
+    width: 425px;
+}
+
+div.letMeIn h1
+{
+    margin-top: 40px;
+}
+
+div.letMeIn h2, div.letMeIn .text-box
+{
+    font-size: 20pt;
+    width: 425px;
+}
+
+div.letMeIn .ui-state-default
+{
+    font-family: Trebuchet MS;
+    font-size: 20pt;
+}
+
+img.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.largeSearchBox
+{
+    margin: 0 auto;
+    /*border: 1px solid #aaaaaa;
+    background-color: #e0e0e0;
+    height: 150px; */  
+}
+
+/* Grid styles */
+.grid
+{
+    padding: 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.gridHeader
+{
+    padding: 4px;  
+    margin: 0 auto;
+    background-color: #992e0e;
+    white-space: nowrap;
+}
+
+.gridHeader strong
+{
+    color: #ffffff;
+    font-family: Trebuchet MS;
+}
+
+.tdWhite
+{
+    background-color: #ffffff;   
+}
+
+.tdGrey
+{
+    background-color: #e0e0e0;    
+}
+
+.tdOrange
+{
+    background-color: #ffddbb;
+    cursor: pointer;  
+}
+
+.grid td
+{
+    padding: 4px;
+}
+
+.grid td.tagBalloon
+{
+    text-align: center;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.grid p
+{
+	font-family: Trebuchet MS, Sans-Serif;
+	font-size: 10pt;
+	color: #444444;
+	font-weight: 400;
+	line-height: 11pt;
+	margin: 0 !important;
+	padding: 0;
+}
+
+.grid a, .grid a:link, .grid a:visited, .grid a:active, .grid a:hover
+{
+	font-family: Trebuchet MS, Sans-Serif;
+	font-size: 10pt;
+	font-weight: 400;
+	line-height: 16pt;
+	text-decoration: underline; 
+}
+
+.grid a, .grid a:link, .grid a:visited
+{
+	color: #992e0e;    
+}
+
+.grid a:active
+{
+    color: #888888;    
+}
+
+.grid a:hover
+{
+    color: #591b08;
+}
+
+.editBox
+{
+  	font-family: Georgia, Palatino Linotype, Book Antiqua, Serif;
+	font-size: 12pt;
+	font-weight: 400;
+}
+
+/* Manage - List Articles div styles */
+div.table
+{
+    display: table;
+}
+
+div.tr
+{
+    display: table-row;
+}
+
+div.tdColumn1, div.tdColumn2, div.tdColumn3, div.tdColumn4, div.tdColumn5
+{
+    display: table-cell;
+    padding: 4px;
+}
+    
+div.tdColumn1
+{
+    width: 25px;
+}
+
+div.tdColumn2
+{
+    width: 20%;
+}
+    
+div.tdColumn1, div.tdColumn2, div.tdColumn4, div.tdColumn5
+{
+    vertical-align: middle;
+}
+  
+div.tdColumn1, div.tdColumn5
+{
+    text-align: center;
+}
+
+div.pager
+{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+div.pager a
+{
+    padding: 3px;
+    border: 1px solid #992e0e;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+div.pager a:hover
+{
+    background-color: #eeeeee;
+}
+
+div.pager a.current
+{
+    padding: 3px;
+    border: 1px solid #992e0e;
+    text-decoration: none;
+    background-color: #ffddbb;
+    font-weight: bold;
+}
+
+div.manage_thumbnail p
+{
+    padding: 0px 10px 0px 110px;
+}
+
+div.manage_thubnail img
+{
+    width: 100px;
+    height: 100px;
+}
+
+div.list_view_icon
+{
+    float: right;
+    text-align: right;
+    height: 14px;
+    width: 14px;  
+    margin: 0px 5px 5px 0px;
+}
+
+div.inactive
+{
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    cursor: pointer; 
+}
+
+div.inactive:hover
+{
+    border: 1px solid #c0c0c0;
+    background-color: #f8f8f8;
+}
+
+div.active
+{
+    border: 1px solid #992e0e;
+    background-color: #f0f0f0;
+    cursor: default;
+}
+
+div.boxes
+{
+    background-image: url(/images/list_view_boxes.png);
+}
+
+div.lines
+{
+    background-image: url(/images/list_view_lines.png);
+}
+
+div.hidden 
+{
+    display: none;
+}

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/2columnright.css")" rel="Stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/jqueryUI/jquery-ui-1.8.11.custom.css")" rel="Stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <script src="@Url.Content("~/Scripts/jquery-min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.8.11.custom.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/FooterScripts.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div id="content">
+        <div class="colmask rightmenu">
+            <div class="colleft">
+                <div class="col1wrap">
+                    <div class="col1">
+                        <!-- Column 1 start -->
+                        @RenderBody()
+                        <!-- Column 1 end -->
+                    </div>
+                </div>
+                <div class="col2">
+                    <!-- Column 2 start -->
+                    <br />
+                    <!-- Column 2 end -->
+                </div>
+            </div>
+        </div>
+        <br style="clear: both;" />
+        <div id="just_give_me_some_space">
+            &nbsp;
+        </div>
+    </div>
+
+
+    <div id="head">
+        &nbsp;
+    </div>
+
+    <!-- Footer -->
+    @Html.Partial("_Footer")
+</body>
+</html>
