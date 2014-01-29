@@ -11,6 +11,8 @@ Having verified the operation of these actions, I constructed a custom JavaScrip
 
 The next task was to work out the actual communication and behaviors. Since the most important task was the AJAX call, I focused on that first. That was pretty simple, and once it was done I began focusing my efforts on the response behaviors. Specifically, I adjusted the timing of the dialog behavior and the showing/hiding of the various divs based on the response delivered. Just to make it more amusing for me while I was developing, I bogarted some animated gifs from http://devopsreactions.tumblr.com/ to display in my dialogs.
 
+For a little extra humor, inject an exception into the controller since that has a response case covered in the dialogs. There is also a little "required field" validation for the username and password fields that have corresponding dialogs as well.
+
 During development I frequently will embed a method directly in the global namespace while I'm "trying it out", so once I was happy with the communication behaviors I refactored all of these into my custom JavaScript object. 
 
 And as the sign in the bathroom says, "No job is finished until the paperwork is done", I cleaned up the files and added documentation to methods and processes to describe what I was doing and why.
